@@ -37,7 +37,7 @@ class Semioe_clickBlood:
     if self.loop:
       self.get_value()
   def get_value(self):
-    time.sleep(1)
+    time.sleep(0.5)
     process = os.popen("sudo gatttool -b C6:05:04:03:F1:BF --char-read -a 0x001b")
     output = process.read()
     #out.write("\n%s" % (output))
